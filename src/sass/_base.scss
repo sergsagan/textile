@@ -9,7 +9,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Arial", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: subpixel-antialiased !important;
     -webkit-backface-visibility: hidden;
@@ -22,12 +22,20 @@ body {
 }
 
 .wrapper {
-    max-width: 2000px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     min-height: 100%;
     overflow: hidden;
     position: relative;
+}
+
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: auto;
 }
 
 .hidden {

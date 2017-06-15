@@ -1,27 +1,21 @@
-.btn{
-  padding: 7px 10px;
-  border-radius: 5px;
-  text-transform: uppercase;
+.btn-request{
+  display: inline-block;
+  width: 203px;
+  height: 51px;
+  line-height: 51px;
+  border-radius: 50px;
+  background-color: rgb(155, 63, 52);
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: $OpenSans;
   font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  box-sizing: border-box;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include transition(all .5s);
 
-  &__light{
-    background-color: $base-color;
-    color:  rgba(175, 70, 26, 1);
-    &:hover{
-      background-color: lighten($base-color, 15%);
-      color: rgba(175, 70, 26, .75);
-    }
-  }
-
-  &__dark{
-    background-color: $stack-color;
-    color: rgba(234, 234, 234, .75);
-    &:hover{
-      background-color: lighten($stack-color, 15%);
-      color: rgba(234, 234, 234, 1);
-    }
+  &:hover{
+    background-color: lighten(rgb(155, 63, 52), 10%);
   }
 }
