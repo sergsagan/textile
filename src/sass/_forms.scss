@@ -1,0 +1,39 @@
+.question{
+
+  input{
+    max-width: 366px;
+    width: 100%;
+    height: 83px;
+    border-radius: 83px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    color: rgba(9, 9, 9, 0.39);
+    font-family: $OpenSans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+
+    @include placeholder($color: rgba(9, 9, 9, 0.39));
+  }
+  button{
+    max-width: 366px;
+    width: 100%;
+    height: 83px;
+    border-radius: 83px;
+    background-color: rgb(246, 211, 117);
+    border: none;
+    outline: none;
+    color: rgb(9, 9, 9);
+    font-family: $OpenSans;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    @include transition(all .5s);
+
+    &:hover{
+      background-color: darken(rgb(246, 211, 117), 15%);
+    }
+  }
+}
