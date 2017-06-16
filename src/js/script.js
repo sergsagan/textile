@@ -55,28 +55,7 @@ $(function() {
 			}
 		);
 	});
-	
-	//change
-	$('.form-of-training .order-form').click(function() {
-		$('.form-of-training').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.form-of-training').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.form-of-training').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	$('.practices .order-form').click(function() {
-		$('.practices').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.practices').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.practices').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	$('.course .order-form').click(function() {
-		$('.course').find(".name, .price, .price .rub").removeClass("active");
-		$(this).parents('.course').find(".name").toggleClass("active").fadeIn(400);
-		$(this).parents('.course').find(".price, .price .rub").toggleClass("active").fadeIn(400);
-	});
-	
-	new WOW().init();
-    
+
     
     $('.fade').slick({
         speed: 500,
@@ -121,35 +100,80 @@ $(function() {
             // instead of a settings object
         ]
     });
-    
 
-    $("#phone").mask("+38 (999) 999-99-99");
-	
-	var today = new Date(),
-		ts = new Date( today.getFullYear(), today.getMonth(), today.getDate() + 7),
-		newYear = true;
-	
-	$('#countdown').countdown({
-		timestamp	: ts,
-		callback	: function(days, hours, minutes, seconds){
-			
-			var message = "";
-			
-			message += days + " <i>дней</i> " + ( days==1 ? '':'' ) + "";
-			message += hours + "" + ( hours==1 ? '':':' ) + "";
-			message += minutes + "" + ( minutes==1 ? '':':' ) + "";
-			message += seconds + " " + ( seconds==1 ? '':' ' ) + " ";
-			
-			if(newYear){
-				message += "";
-			}
-			else {
-				message += "";
-			}
-		}
-	});
+    //mobile-menu
 
-    
+    $.fn.extend({
+
+        // Define the threeBarToggle function by extending the jQuery object
+        threeBarToggle: function(options){
+
+            // Set the default options
+            var defaults = {
+                color: '#9b3f34',
+                width: 37,
+                height: 25,
+                speed: 400,
+                animate: true
+            };
+            var options = $.extend(defaults, options);
+
+            return this.each(function(){
+
+                $(this).empty().css({'width': options.width, 'height': options.height, 'background': 'transparent'});
+                $(this).addClass('tb-menu-toggle');
+                $(this).prepend('<i></i><i></i><i></i>').on('click', function(event) {
+                    event.preventDefault();
+                    $(this).toggleClass('tb-active-toggle');
+                    if (options.animate) { $(this).toggleClass('tb-animate-toggle'); }
+                    $('.tb-mobile-menu').slideToggle(options.speed);
+                });
+                $(this).children().css('background', options.color);
+            });
+        },
+
+        // Define the accordionMenu() function that adds the sliding functionality
+        accordionMenu: function(options){
+
+            // Set the default options
+            var defaults = {
+                speed: 400
+            };
+            var options =  $.extend(defaults, options);
+
+            return this.each(function(){
+
+                $(this).addClass('tb-mobile-menu');
+                var menuItems = $(this).children('li');
+                menuItems.find('.sub-menu').parent().addClass('tb-parent');
+                $('.tb-parent ul').hide();
+                $('.tb-parent > a').on('click', function(event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                    $(this).siblings().slideToggle(options.speed);
+                });
+
+            });
+        }
+    });
+
+// Convert any element into a three bar toggle
+// Optional arguments are 'speed' (number in ms, 'slow' or 'fast') and 'animation' (true or false) to disable the animation on the toggle
+    $('#menu-toggle').threeBarToggle({color: '#9b3f34', width: 37, height: 25});
+
+// Make any nested ul-based menu mobile
+// Optional arguments are 'speed' and 'accordion' (true or false) to disable the behavior of closing other sub
+    $('#menu').accordionMenu();
+
+    $("#menu li a").click(function() {
+        $("a").removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+
+
+
     //Аякс отправка форм
     //Документация: http://api.jquery.com/jquery.ajax/
 	$("#feadback-form").submit(function() {

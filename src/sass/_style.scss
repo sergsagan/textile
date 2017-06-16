@@ -16,6 +16,8 @@ header{
       text-align: right;
     }
     &__top-group{
+      float: right;
+      padding-top: 10px;
       display: inline-block;
       vertical-align: middle;
       max-width: 1030px;
@@ -97,6 +99,7 @@ header{
                   font-size: 16px;
                   font-weight: 400;
                   text-transform: none;
+                  padding:0;
 
                   &:hover{
                     color: darken(rgb(255, 255, 255), 30%);
@@ -115,6 +118,63 @@ header{
         li:hover .drop{
           display: block;
         }
+      }
+
+      #menu, .sub-menu {
+        display: none;
+        list-style: none;
+      }
+      #menu-toggle{
+        display: none;
+      }
+
+      /*Change toggle size by adjusting width & height*/
+      .tb-menu-toggle {
+        border: 0;
+        position: relative;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      /*Change toggle color here*/
+      .tb-menu-toggle i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20%;
+        -webkit-transition:all .2s;
+        -moz-transition:all .2s;
+        -o-transition:all .2s;
+        transition:all .2s;
+      }
+      .tb-menu-toggle i:nth-child(2) {
+        top: 40%;
+      }
+      .tb-menu-toggle i:nth-child(3) {
+        top: 80%;
+      }
+
+      /* Style the active toggle here */
+      .tb-menu-toggle.tb-active-toggle i {  }
+
+      /*Animation of the toggle*/
+      .tb-menu-toggle.tb-animate-toggle i:first-child,
+      .tb-menu-toggle.tb-animate-toggle i:nth-child(2){
+        top: 40%;
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+        -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+      }
+      .tb-menu-toggle.tb-animate-toggle i:nth-child(3){
+        top: 40%;
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        -ms-transform:rotate(-45deg);
+        -o-transform:rotate(-45deg);
+        transform:rotate(-45deg);
       }
     }
   }
@@ -141,5 +201,110 @@ header{
     max-width: 1920px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.48);
+  }
+}
+
+//footer
+
+footer{
+  width: 100%;
+  max-width: 1920px;
+  height: 250px;
+  margin: -250px auto 0;
+  padding: 45px 0 0;
+  position: relative;
+
+  .footer__logo{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px;
+  }
+  .footer__nav{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 420px;
+    width: 100%;
+    padding-top: 25px;
+    margin-right: 50px;
+
+    .list__menu{
+      display: inline-block;
+      width: 49%;
+
+      li{
+        display: block;
+        margin-bottom: 15px;
+
+        a{
+          color: rgb(0, 0, 0);
+          font-family: $OpenSans;
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .site__map{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 80px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-top: 25px;
+  }
+
+  .right__group{
+    float: right;
+    text-align: right;
+    padding-top: 15px;
+
+    .phone{
+      display: block;
+      color: rgb(0, 0, 0);
+      font-family: $OpenSans;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .footer__social{
+      a{
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .ok{
+        @include sprite($icon-ok);
+      }
+      .fb{
+        @include sprite($icon-fb);
+      }
+      .vk{
+        @include sprite($icon-vk);
+      }
+    }
+  }
+
+  .copyright{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: rgb(155, 63, 52);
+    color: rgb(255, 255, 255);
+    font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
   }
 }

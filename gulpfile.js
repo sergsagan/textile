@@ -30,7 +30,7 @@ var src = {
         js: ['./src/js/**/*.js'],
         sass: ['./src/sass/main.{scss,sass}'],
         images: ['./src/img/**/*.*', './src/sass/img/*.svg', '!./src/img/icons/sprites/*.png', '!./src/img/icons/sprites/*.svg'],
-        sprite: ['./src/img/icons/*.png'],
+        sprites: ['./src/img/icons/*.png'],
         svgsprite: ['./src/img/icons/sprites/*.svg'],
         fonts: ['./src/fonts/**/*.*'],
         html: ['./src/*.html']
