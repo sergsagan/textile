@@ -726,7 +726,7 @@ header{
   .service__wrap{
     margin: 0 auto 50px;
     text-align: center;
-    max-width: 1160px;
+    max-width: 1000px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -736,9 +736,9 @@ header{
   .service__item{
     display: inline-block;
     vertical-align: top;
-    max-width: 280px;
+    max-width: 240px;
     width: 100%;
-    height: 175px;
+    height: 149px;
     border: 1px solid rgba(0, 0, 0, 0.06);
     background-color: rgb(0, 0, 0);
     position: relative;
@@ -748,16 +748,16 @@ header{
     .title{
       color: rgb(255, 255, 255);
       font-family: $OpenSans;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
-      line-height: 24px;
+      line-height: 22px;
       text-transform: uppercase;
 
       .index{
         display: block;
         color: rgb(255, 255, 255);
         font-family: $OpenSans;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 300;
         line-height: 28px;
         text-transform: uppercase;
@@ -852,7 +852,7 @@ header{
       width: 25%;
       background-color: rgb(255, 255, 255);
       border: 1px solid rgba(0, 0, 0, 0.1);
-      padding: 0 20px;
+      padding: 0 10px;
       height: 75px;
 
       input{
