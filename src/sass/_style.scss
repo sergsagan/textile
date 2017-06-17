@@ -53,7 +53,7 @@ header{
         max-width: 700px;
 
         li{
-          padding: 20px 0;
+          padding: 21.5px 0;
           background-color: transparent;
           position: relative;
           @include transition(all .5s);
@@ -62,12 +62,12 @@ header{
           a{
             color: rgb(0, 0, 0);
             font-family: $OpenSans;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 400;
             text-transform: uppercase;
             text-decoration: none;
             cursor: pointer;
-            padding: 0 32px;
+            padding: 0 37px;
             white-space: nowrap;
           }
 
@@ -184,6 +184,50 @@ header{
 
 }
 
+//breadcrumbs
+
+.breadcrumbs{
+  max-width: 1920px;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  background-color: rgb(242, 245, 250);
+  margin-top: -10px;
+  position: relative;
+
+  li{
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(79, 78, 78);
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    .icon{
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -4px;
+      @include sprite($home-house-icon);
+    }
+
+    a{
+      color: rgb(79, 78, 78);
+      font-family: $OpenSans;
+      font-size: 15px;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    span{
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+  }
+}
+
 //section_1
 
 .section_1{
@@ -207,15 +251,15 @@ header{
     background-color: rgba(0, 0, 0, 0.48);
   }
   .border__image{
-    max-width: 830px;
+    max-width: 780px;
     width: 100%;
-    height: 500px;
-    border: 15px solid rgba(246, 211, 117, 0.39);
+    height: 440px;
+    border: 12px solid rgba(246, 211, 117, 0.39);
   }
   h1{
     color: rgb(255, 255, 255);
     font-family: $OpenSans;
-    font-size: 60px;
+    font-size: 58px;
     font-weight: 700;
     line-height: 85px;
     text-transform: uppercase;
@@ -277,11 +321,12 @@ header{
     display: inline-block;
     vertical-align: top;
     width: 49%;
+    padding-left: 80px;
 
     .overlay{
       position: relative;
-      width: 600px;
-      height: 383px;
+      width: 520px;
+      height: 335px;
       background-color: rgb(155, 63, 52);
     }
     .picture{
@@ -294,14 +339,14 @@ header{
     display: inline-block;
     vertical-align: middle;
     width: 49%;
-    padding: 50px 20px 50px 100px;
+    padding: 35px 20px 35px 100px;
 
     span{
       display: inline-block;
       vertical-align: middle;
       color: rgb(2, 2, 2);
       font-family: $OpenSans;
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 400;
       line-height: 30px;
       text-align: left;
@@ -312,7 +357,7 @@ header{
         position: absolute;
         left: -50px;
         width: 4px;
-        height: 275px;
+        height: 255px;
         background-color: rgb(246, 211, 117);
       }
     }
@@ -372,11 +417,14 @@ header{
   }
 
   .advant__wrap{
+    max-width: 1000px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+
   .item{
     display: inline-block;
     vertical-align: top;
@@ -619,15 +667,123 @@ header{
 
   .more{
     display: block;
-    max-width: 302px;
+    max-width: 285px;
     width: 100%;
-    height: 78px;
-    border-radius: 78px;
+    height: 68px;
+    border-radius: 68px;
     background-color: rgb(155, 63, 52);
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0 auto;
+
+    &:hover{
+      background-color: lighten(rgb(155, 63, 52), 10%);
+    }
+  }
+}
+
+//section_4_1
+
+.section_4_1{
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;;
+  text-align: center;
+  padding: 60px 0 75px;
+  position: relative;
+
+  .section__title {
+    max-width: 370px;
+    .ask {
+      color: rgb(2, 2, 2);
+    }
+  }
+
+  .line{
+    max-width: 230px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(124, 124, 124, 0.46);
+    margin: 0 auto 10px;
+  }
+
+  .descript{
+    display: block;
+    color: rgba(2, 2, 2, 0.69);
+    font-family: $OpenSans;
     font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
+
+  .service__wrap{
+    margin: 0 auto 50px;
+    text-align: center;
+    max-width: 1160px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service__item{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 280px;
+    width: 100%;
+    height: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    .title{
+      color: rgb(255, 255, 255);
+      font-family: $OpenSans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+
+      .index{
+        display: block;
+        color: rgb(255, 255, 255);
+        font-family: $OpenSans;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        text-transform: uppercase;
+      }
+    }
+
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.5);
+
+      .title{
+        display: none;
+      }
+    }
+  }
+
+  .more{
+    display: block;
+    max-width: 285px;
+    width: 100%;
+    height: 68px;
+    border-radius: 68px;
+    background-color: rgb(155, 63, 52);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: $OpenSans;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
@@ -677,8 +833,8 @@ header{
 
   table{
     width: 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
+    max-width: 1000px;
+    margin: 0 auto 30px;
 
     th{
       width: 25%;
@@ -698,20 +854,27 @@ header{
       border: 1px solid rgba(0, 0, 0, 0.1);
       padding: 0 20px;
       height: 75px;
+
+      input{
+        width: 100%;
+        height: 75px;
+        border:none;
+        outline: none;
+      }
     }
   }
 
   .order{
     display: block;
-    max-width: 302px;
+    max-width: 285px;
     width: 100%;
-    height: 78px;
-    border-radius: 78px;
+    height: 68px;
+    border-radius: 68px;
     background-color: rgb(155, 63, 52);
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: $OpenSans;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
@@ -805,6 +968,39 @@ header{
   .ask:after {
     margin-right: -50%;
     margin-left: 40px;
+  }
+}
+
+//product
+
+.product{
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 50px 0;
+
+  h2{
+    color: rgb(2, 2, 2);
+    font-family: $OpenSans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .photo{
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+
+  p{
+    color: rgb(2, 2, 2);
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 25px;
   }
 }
 

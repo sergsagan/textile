@@ -92,37 +92,41 @@
     min-height: 400px;
   }
   .section_1 .border__image {
-    max-width: 280px;
+    max-width: 250px;
     height: 300px;
-    border: 10px solid rgba(246, 211, 117, 0.39);
+    border: 5px solid rgba(246, 211, 117, 0.39);
   }
   .section_1 h1 {
     font-size: 19px;
     line-height: 30px;
     margin-bottom: 50px;
-    padding-top: 70px;
+    padding-top: 80px;
   }
   .section_1 .description {
     font-size: 15px;
     line-height: 20px;
   }
   .section__title .ask {
-    font-size: 18px;
+    font-size: 15px;
   }
   .section__title {
     max-width: 280px;
   }
   .section__title .bg {
-    padding: 15px;
+    padding: 10px;
+  }
+  .section_2 .section__title, .section_3 .section__title, .section_4 .section__title, .section_5 .section__title {
+    max-width: 230px;
   }
   .section_2 .descript, .section_3 .descript, .section_4 .descript, .section_5 .descript {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     margin-bottom: 50px;
   }
   .section_2 .left__block {
     display: block;
     width: 100%;
+    padding-left: 0;
   }
   .section_2 .left__block .overlay {
     width: 270px;
@@ -139,8 +143,8 @@
     line-height: 20px;
   }
   .section_6 .descript {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
     margin-bottom: 30px;
   }
   .section_3 .advant__wrap {
@@ -165,17 +169,17 @@
   }
   .question input {
     max-width: 300px;
-    height: 50px;
-    border-radius: 50px;
+    height: 45px;
+    border-radius: 45px;
     font-size: 13px;
     margin-right: 0;
     margin-bottom: 15px;
   }
   .section_4 .more, .section_5 .order {
-    max-width: 250px;
-    height: 60px;
-    border-radius: 60px;
-    font-size: 18px;
+    max-width: 225px;
+    height: 45px;
+    border-radius: 45px;
+    font-size: 15px;
   }
   .section_4 .serv-1 .service__heading {
     width: 75%;
@@ -185,6 +189,29 @@
   }
   .section_4 .serv-6 .service__heading {
     width: 65%;
+  }
+  .section_4_1 .section__title {
+    max-width: 230px;
+  }
+  .section_4_1 .descript {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+  .section_4_1 .service__item {
+    max-width: 250px;
+    height: 155px;
+    margin: 0 auto 10px;
+  }
+  .section_4_1 .service__wrap {
+    max-width: 300px;
+  }
+  .section_4_1 .service__item .title {
+    font-size: 10px;
+  }
+  .section_4_1 .service__item .title .index {
+    font-size: 10px;
+    line-height: 15px;
   }
   .section_5 table th {
     font-size: 11px;
@@ -196,12 +223,35 @@
   }
   .question button {
     max-width: 300px;
-    height: 50px;
-    border-radius: 50px;
+    height: 45px;
+    border-radius: 45px;
     font-size: 16px;
   }
-
-
+  .breadcrumbs li span {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+  .breadcrumbs li {
+    font-size: 9px;
+  }
+  .breadcrumbs li a {
+    font-size: 9px;
+  }
+  .product {
+    padding: 25px 0;
+  }
+  .product .photo {
+    width: 130px;
+  }
+  .product h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .product p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
 
   footer .footer__logo {
     margin: 0 auto;
@@ -262,6 +312,9 @@
     height: 180px;
     margin: -180px auto 0;
     padding: 10px 0 0;
+  }
+  .footer__social {
+    margin-bottom: 15px;
   }
   .empty {
     height: 180px;
@@ -377,6 +430,7 @@
   .section_2 .left__block {
     display: block;
     width: 100%;
+    padding-left: 0;
   }
   .section_2 .left__block .overlay {
     width: 425px;
@@ -409,7 +463,7 @@
   }
   .section_4 .service {
     max-width: 215px;
-    height: 150px;
+    height: 125px;
     margin: 0 auto 15px;
   }
   .section_4 .service__heading {
@@ -418,13 +472,28 @@
   }
   .section_4 .more, .section_5 .order {
     max-width: 250px;
-    height: 60px;
-    border-radius: 60px;
-    font-size: 18px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
     line-height: 18px;
   }
   .section_4 .serv-8 .service__heading {
     width: 50%;
+  }
+  .section_4_1 .service__item {
+    max-width: 180px;
+    height: 110px;
+    margin: 0 auto 10px;
+  }
+  .section_4_1 .service__wrap {
+    max-width: 380px;
+  }
+  .section_4_1 .service__item .title {
+    font-size: 11px;
+  }
+  .section_4_1 .service__item .title .index {
+    font-size: 11px;
+    line-height: 20px;
   }
   .section_5 table th {
     font-size: 14px;
@@ -434,22 +503,44 @@
     padding: 0 5px;
     height: 50px;
   }
-
+  .section_2 .section__title, .section_3 .section__title, .section_4 .section__title, .section_5 .section__title {
+    max-width: 320px;
+  }
   .question input {
     max-width: 350px;
-    height: 65px;
-    border-radius: 65px;
-    font-size: 14px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 13px;
     margin-right: 0;
     margin-bottom: 15px;
   }
   .question button {
     max-width: 350px;
-    height: 65px;
-    border-radius: 65px;
-    font-size: 18px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 15px;
   }
-
+  .breadcrumbs li {
+    font-size: 12px;
+  }
+  .breadcrumbs li a {
+    font-size: 12px;
+  }
+  .product {
+    padding: 30px 0;
+  }
+  .product .photo {
+    width: 180px;
+  }
+  .product h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .product p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
   footer .footer__logo {
     margin-right: 30px;
 
@@ -551,14 +642,14 @@
     font-size: 13px;
   }
   .section_1 .border__image {
-    max-width: 640px;
-    height: 400px;
+    max-width: 580px;
+    height: 380px;
   }
   .section_1 h1 {
     font-size: 42px;
     line-height: 55px;
     margin-bottom: 70px;
-    padding-top: 125px;
+    padding-top: 140px;
   }
   .section_1 .description {
     font-size: 24px;
@@ -568,7 +659,10 @@
     font-size: 22px;
   }
   .section__title {
-    max-width: 420px;
+    max-width: 370px;
+  }
+  .section_2 .left__block {
+    padding-left: 0;
   }
   .section_2 .left__block .overlay {
     width: 380px;
@@ -578,38 +672,70 @@
      padding: 0 20px 20px 70px;
    }
   .section_2 .right__block span {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .section_2 .right__block span:before {
     left: -25px;
-    height: 240px;
+    height: 220px;
   }
   .section_2 .descript, .section_3 .descript, .section_4 .descript {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 60px;
   }
+  .section_2 .section__title, .section_3 .section__title, .section_4 .section__title, .section_5 .section__title {
+    max-width: 320px;
+  }
+  .section_3 .item {
+    padding: 0 15px;
+  }
   .section_3 .item__text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
+  }
+  .section_3 .advant__wrap {
+    max-width: 650px;
+  }
+  .section_4 .services__wrap {
+    max-width: 565px;
   }
   .section_4 .service {
     margin: 0 auto 15px;
+    max-width: 265px;
+    height: 120px;
   }
   .section_4 .service__heading {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
+  }
+  .section_5 table {
+    max-width: 650px;
   }
   .section_6 .descript {
     font-size: 20px;
     margin-bottom: 35px;
   }
   .section_4 .more, .section_5 .order {
-    max-width: 275px;
-    height: 65px;
-    border-radius: 65px;
-    font-size: 20px;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  .section_4_1 .service__item {
+    max-width: 206px;
+    height: 128px;
+    margin: 0 auto 10px;
+  }
+  .section_4_1 .service__wrap {
+    max-width: 650px;
+  }
+  .section_4_1 .service__item .title {
+    font-size: 13px;
+  }
+  .section_4_1 .service__item .title .index {
+    font-size: 13px;
+    line-height: 22px;
   }
   .section_5 table th {
     font-size: 16px;
@@ -621,18 +747,38 @@
   }
   .question input {
     max-width: 230px;
-    height: 55px;
-    border-radius: 55px;
+    height: 45px;
+    border-radius: 45px;
     font-size: 14px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .question button {
     max-width: 230px;
-    height: 55px;
-    border-radius: 55px;
-    font-size: 18px;
+    height: 45px;
+    border-radius: 45px;
+    font-size: 14px;
   }
-
+  .breadcrumbs li {
+    font-size: 12px;
+  }
+  .breadcrumbs li a {
+    font-size: 12px;
+  }
+  .product {
+    padding: 30px 0;
+  }
+  .product .photo {
+    width: 200px;
+  }
+  .product h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .product p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
   footer .footer__logo {
     margin-right: 30px;
 
@@ -708,47 +854,150 @@
     margin-bottom: 5px;
   }
   .section_1 .border__image {
-    max-width: 800px;
-    height: 450px;
+    max-width: 700px;
+    height: 420px;
+    border: 10px solid rgba(246, 211, 117, 0.39);
   }
   .section_1 h1 {
-    font-size: 55px;
-    line-height: 75px;
-    padding-top: 100px;
+    font-size: 50px;
+    line-height: 65px;
+    padding-top: 135px;
   }
   .section_1 .description {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 35px;
   }
+  .section_2 .left__block {
+    width: 40%;
+    padding-left: 10px;
+  }
   .section_2 .left__block .overlay {
-    width: 470px;
-    height: 300px;
+    width: 400px;
+    height: 255px;
   }
   .section_2 .right__block span {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .section_2 .right__block span:before {
+    left: -40px;
+    height: 240px;
   }
   .section_2 .right__block {
     padding: 0 20px 50px 100px;
   }
+  .section_3 .advant__wrap {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .section_3 .item__text {
+    font-size: 18px;
+  }
+  .section_3 .item {
+    max-width: 240px;
+    padding: 0 30px;
+  }
+  .section_3:before {
+    border: 10px solid transparent;
+    border-top: 10px solid #f2f5fa;
+    bottom: -20px;
+    margin-left: -10px;
+  }
+  .section_4:before {
+    border: 10px solid transparent;
+    border-top: 10px solid white;
+    margin-left: -10px;
+    bottom: -20px;
+  }
   .section_4 .service {
-    max-width: 310px;
+    max-width: 260px;
+    height: 150px;
+  }
+  .section_4 .services__wrap {
+    max-width: 805px;
+  }
+  .section_4 .service__heading {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .section_4 .more, .section_5 .order {
+    max-width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 17px;
+  }
+  .section_4_1 .service__item {
+    max-width: 270px;
+    height: 165px;
+    margin: 0 auto 10px;
+  }
+  .section_4_1 .service__wrap {
+    max-width: 840px;
+  }
+  .section_4_1 .service__item .title {
+    font-size: 14px;
+  }
+  .section_5 table {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto 30px;
+  }
+  .section_5 table td {
+    padding: 0 10px;
+    height: 65px;
+  }
+  .section_5 table th {
+    font-size: 16px;
+    padding: 20px 10px;
   }
   .question input{
-    max-width: 300px;
-    height: 70px;
-    border-radius: 70px;
-    font-size: 15px;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 14px;
     margin-right: 10px;
   }
   .question button{
-    max-width: 300px;
-    height: 70px;
-    border-radius: 70px;
+    max-width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  .section__title .ask {
+    font-size: 25px;
+  }
+  .section__title {
+    max-width: 390px;
+  }
+  .section__title .ask:before {
+    margin-right: 30px;
+    margin-left: -50%;
+  }
+  .section__title .ask:after {
+    margin-right: -50%;
+    margin-left: 30px;
+  }
+  .section_2 .descript, .section_3 .descript, .section_4 .descript, .section_5 .descript, .section_6 .descript {
     font-size: 20px;
   }
-
-
+  .breadcrumbs li {
+    font-size: 13px;
+  }
+  .breadcrumbs li a {
+    font-size: 13px;
+  }
+  .product .photo {
+    width: 250px;
+  }
+  .product h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .product p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
   footer .footer__logo {
     margin-right: 50px;
 

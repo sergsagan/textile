@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$home-house-icon-name: 'home-house-icon';
+$home-house-icon-x: 72px;
+$home-house-icon-y: 50px;
+$home-house-icon-offset-x: -72px;
+$home-house-icon-offset-y: -50px;
+$home-house-icon-width: 17px;
+$home-house-icon-height: 16px;
+$home-house-icon-total-width: 108px;
+$home-house-icon-total-height: 86px;
+$home-house-icon-image: '../img/sprite.png';
+$home-house-icon: (72px, 50px, -72px, -50px, 17px, 16px, 108px, 86px, '../img/sprite.png', 'home-house-icon', );
 $icon-fb-name: 'icon-fb';
 $icon-fb-x: 72px;
 $icon-fb-y: 0px;
@@ -56,7 +67,7 @@ $product: (0px, 0px, 0px, 0px, 72px, 50px, 108px, 86px, '../img/sprite.png', 'pr
 $spritesheet-width: 108px;
 $spritesheet-height: 86px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($icon-fb, $icon-ok, $icon-vk, $product, );
+$spritesheet-sprites: ($home-house-icon, $icon-fb, $icon-ok, $icon-vk, $product, );
 $spritesheet: (108px, 86px, '../img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
